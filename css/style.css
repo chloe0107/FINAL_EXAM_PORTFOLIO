@@ -1,12 +1,5 @@
-/* ============================================================
-   PORTFOLIO - style.css
-   Theme: Cyber Red & Black
-   ============================================================ */
 
-/* ---------- Google Fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
-
-/* ---------- CSS Variables ---------- */
 :root {
   --red:        #e01010;
   --red-dark:   #8b0000;
@@ -33,7 +26,6 @@
   --glow-strong: 0 0 24px rgba(224, 16, 16, 0.9), 0 0 48px rgba(224, 16, 16, 0.4);
 }
 
-/* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -54,15 +46,11 @@ img { max-width: 100%; display: block; }
 
 ul { list-style: none; }
 
-/* ---------- Scrollbar ---------- */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--dark); }
 ::-webkit-scrollbar-thumb { background: var(--red-dark); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--red); }
 
-/* ============================================================
-   NAVIGATION
-   ============================================================ */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -116,7 +104,6 @@ nav {
   text-shadow: var(--glow);
 }
 
-/* Hamburger (CSS-only via checkbox) */
 .nav-toggle { display: none; }
 
 .hamburger {
@@ -136,17 +123,12 @@ nav {
   transition: all var(--transition);
 }
 
-/* ============================================================
-   PAGE WRAPPER
-   ============================================================ */
+
 .page-content {
   padding-top: var(--nav-h);
   min-height: 100vh;
 }
 
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: flex;
@@ -160,7 +142,6 @@ nav {
     linear-gradient(180deg, #000 0%, #0d0000 50%, #000 100%);
 }
 
-/* Cyber grid background */
 .hero::before {
   content: '';
   position: absolute;
@@ -244,7 +225,6 @@ nav {
   animation: fadeUp 0.9s ease 0.4s both;
 }
 
-/* ---------- Buttons ---------- */
 .btn {
   font-family: var(--font-display);
   font-size: 0.75rem;
@@ -284,7 +264,6 @@ nav {
   transform: translateY(-2px);
 }
 
-/* ---------- Scroll indicator ---------- */
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;
@@ -313,9 +292,6 @@ nav {
   50%       { opacity: 1;   transform: scaleY(1.1); }
 }
 
-/* ============================================================
-   SECTION COMMONS
-   ============================================================ */
 .section {
   padding: 5rem 2rem;
 }
@@ -363,9 +339,6 @@ nav {
   margin-bottom: 3rem;
 }
 
-/* ============================================================
-   CARDS
-   ============================================================ */
 .card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -414,14 +387,10 @@ nav {
   line-height: 1.6;
 }
 
-/* ---------- Grid layouts ---------- */
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 
-/* ============================================================
-   PAGE HERO (inner pages)
-   ============================================================ */
 .page-hero {
   min-height: 300px;
   display: flex;
@@ -480,9 +449,6 @@ nav {
   max-width: 500px;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 footer {
   background: var(--black);
   border-top: 1px solid var(--red-dark);
@@ -549,9 +515,7 @@ footer {
 
 .footer-bottom span { color: var(--red); }
 
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -570,9 +534,6 @@ footer {
   80%       { transform: translate(1px, -1px); }
 }
 
-/* ============================================================
-   SKILL BARS (skills.html)
-   ============================================================ */
 .skill-bar-wrap {
   margin-bottom: 1.5rem;
 }
@@ -622,9 +583,6 @@ footer {
   box-shadow: var(--glow);
 }
 
-/* ============================================================
-   GALLERY (gallery.html)
-   ============================================================ */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -709,9 +667,6 @@ footer {
   letter-spacing: 2px;
 }
 
-/* ============================================================
-   BLOG (blog.html)
-   ============================================================ */
 .blog-card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -778,9 +733,6 @@ footer {
   line-height: 1.7;
 }
 
-/* ============================================================
-   QUOTE BLOCK
-   ============================================================ */
 .quote-block {
   border-left: 3px solid var(--red);
   padding: 1.2rem 1.5rem;
@@ -804,9 +756,6 @@ footer {
   letter-spacing: 1.5px;
 }
 
-/* ============================================================
-   INSPIRATION CARDS
-   ============================================================ */
 .inspire-card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -861,9 +810,6 @@ footer {
   line-height: 1.5;
 }
 
-/* ============================================================
-   DAILY SCHEDULE
-   ============================================================ */
 .schedule-list { display: flex; flex-direction: column; gap: 0; }
 
 .schedule-item {
@@ -915,9 +861,6 @@ footer {
   font-size: 0.88rem;
 }
 
-/* ============================================================
-   GAMING CARDS
-   ============================================================ */
 .game-card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -973,9 +916,6 @@ footer {
   line-height: 1.5;
 }
 
-/* ============================================================
-   WATTPAD PAGE
-   ============================================================ */
 .story-card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -1034,9 +974,6 @@ footer {
   line-height: 1.6;
 }
 
-/* ============================================================
-   ABOUT PAGE - bio layout
-   ============================================================ */
 .about-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -1091,9 +1028,6 @@ footer {
   min-width: 100px;
 }
 
-/* ============================================================
-   HOBBIES
-   ============================================================ */
 .hobby-card {
   background: var(--dark-2);
   border: 1px solid var(--dark-3);
@@ -1127,9 +1061,6 @@ footer {
 
 .hobby-card p { color: var(--white-dim); font-size: 0.9rem; line-height: 1.5; }
 
-/* ============================================================
-   STATS ROW
-   ============================================================ */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1165,16 +1096,12 @@ footer {
   text-transform: uppercase;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (max-width: 1024px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-  /* Hamburger menu */
   .hamburger { display: flex; }
 
   .nav-toggle:checked ~ .nav-links {
